@@ -1,38 +1,398 @@
-.App {
+*{
+  margin: 4px 0;
+  padding: 0 ;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+}
+
+nav{
+  /* background-color: aqua; */
+  position: relative;
+}
+
+.container{
+  /* background-color: aqua; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  line-height: 40px;
+  z-index: 100; 
+  height: 100px; 
+}
+
+
+.container-logo{
+  cursor: pointer;
+  font-family: 'Comfortaa', cursive;  
+  display: flex;
+}
+
+.container-logo h2{
+  font-weight: 400;
+}
+
+.imgk{
+  margin-top: -20px;
+  width: 82px;
+  height: 80px;
+  background: url(img/kruger.png);  
+}
+
+.links .link {
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  
+}
+
+.link a {
+  text-decoration: none;
+  margin: 0 25px;  
+  font-weight: 700;
+}
+
+.link a:hover{
+  color: #ff9016;  
+  /* display: inherit; */
+}
+
+/* .link a:focus{
+  border-bottom-style: solid;
+  border-bottom-color: black;
+} */
+
+
+hr {
+  /* border: 1px solid ; */
+  margin: auto;
+  width: 1000px;
+  
+}
+
+/* Footer */
+
+.footer-container{
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  width: 100vw;
+}
+
+/* Welcome */
+.hello{
+  width: 1000px;
+  padding-top: 100px;
+  margin: auto;
+  text-align: center;
+  font-weight: 100;
+}
+.head{  
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.hi{
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+/* IMC */
+.card-imc {
+  background-color: #d9d9d9;
+  width: 800px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;  
+  transition: 0.3s;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Edad */
+.card {
+  background-color: #484848;
+  width: 700px;
+  height: 100px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center ;
+  box-shadow: 0 8px 5px 0px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.card-edad{  
+  background-color: #484848;
+  width: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 5px 0px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  color: aliceblue;
+}
+.card-container {
+  display: flex;  
+  width: 600px;
+  overflow: visible;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fecha{
+  background-color: #d9d9d9;
+  border: none;
+  width: 200px;
+  height: 30px; 
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.boton{
+  background-color: #d9d9d9;
+  border: none;
+  margin-left: 40px;
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 25px;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Clock */
+.clock {
+  margin-top: -200px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  border: 2px solid black;
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.5rem;
+}
+
+.clock .number1 {
+  --rotation: 30deg;
+}
+
+.clock .number2 {
+  --rotation: 60deg;
+}
+
+.clock .number3 {
+  --rotation: 90deg;
+}
+
+.clock .number4 {
+  --rotation: 120deg;
+}
+
+.clock .number5 {
+  --rotation: 150deg;
+}
+
+.clock .number6 {
+  --rotation: 180deg;
+}
+
+.clock .number7 {
+  --rotation: 210deg;
+}
+
+.clock .number8 {
+  --rotation: 240deg;
+}
+
+.clock .number9 {
+  --rotation: 270deg;
+}
+
+.clock .number10 {
+  --rotation: 300deg;
+}
+
+.clock .number11 {
+  --rotation: 330deg;
+}
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background: black;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom center;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock .hand.second {
+  --rotation: 0;
+  width: 3px;
+  height: 45%;
+  background: red;
+  animation: second 60s infinite linear;
+}
+
+.clock .hand.minute {
+  --rotation: 0;
+  width: 7px;
+  height: 40%;
+  background: black;
+  animation: second 60s infinite linear;
+}
+
+.clock .hand.hour {
+  --rotation: 0;
+  width: 10px;
+  height: 35%;
+  background: black;
+  animation: second 60s infinite linear;
+}
+
+.body-clock { 
+  margin-top: 2px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #fe6b8b 30%, #ff8e53 90%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* About */
+.about-container{
+  width: 1000px;  
+  margin: auto;
+  display: flex;
+}
+
+.info{
+  width: 600px;
+  margin-left: 10%;
+  padding-top: 100px;
+}
+
+.info h1{
+  padding-bottom: 40px;
+}
+
+.perfil{
+  padding-top: 80px;
+  width: 280px;
+  display: block;
+}
+
+/* Contact */
+.title{  
+  padding-top: 20px;
+  width: 800px;
+  
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.wrapper {
+  /* margin-top: 300px; */
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 1em;
+  border: 1px solid #c1c1c1;
+}
+.wrapper
+h3 {
+  margin: 0;
+  font-weight: 700;
+}
+.wrapper
+input:focus,
+textarea:focus {
+  outline: 3px solid #ff9016;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+form p {
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  padding: 1em;
+}
+.wrapper
+button {
+  background: #18a0fb;
+  width: 50%;
+  border: 0;
+  border-radius: 5px;
   color: white;
+  padding-bottom: -100px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover, button:focus {
+  background: #ff9016;
+  outline: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
+form .em {
+  grid-column: 1 / 3;
+}
+
+textarea{
+  grid-column: 1 / 3;
+}
+
+
