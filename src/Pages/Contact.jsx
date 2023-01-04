@@ -3,7 +3,8 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-        <div className="title">
+    <div className='contact-container' >
+    <div className="title">
           <h1>Ready to connect with me?</h1>
         </div>
       {/* <div className="contact-container">
@@ -30,6 +31,10 @@ const Contact = () => {
         </p>
       </form>
     </div>       
+
+
+    </div>
+        
     </>
   )
 }

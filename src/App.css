@@ -8,6 +8,59 @@
 nav{
   /* background-color: aqua; */
   position: relative;
+  /* height: 80px; */
+}
+
+.toggle{
+  color: #000;
+  margin-right: 20px;
+  font-size: 30px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: .3s;
+  display: none;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    /* .container{
+      justify-content: space-between;
+    } */
+
+    .toggle{
+      display: inline-block;
+      margin-right: 10%;
+      
+    }
+    .links{
+      background-color: #484848;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+      height: calc(100vh -80px);
+      width: 100%;
+      z-index: 1;
+      top: -100vh;
+      transition: .5s;
+    }
+
+    .activate{
+      top: 80px;
+    }
+
+    .links .link:hover{
+      background-color: #ff9016;
+    }
+
+    
+    
 }
 
 .container{
@@ -35,8 +88,14 @@ nav{
 .imgk{
   margin-top: -20px;
   width: 82px;
-  height: 80px;
+  height: 68px;
   background: url(img/kruger.png);  
+}
+
+.imglk{
+  /* margin-top: -20px; */
+  width: 82px;
+  height: 68px;
 }
 
 .links .link {
@@ -397,3 +456,36 @@ textarea{
 }
 
 
+@media screen and (max-width: 800px) {
+  
+
+  hr{
+    width: 90%;
+  }
+  .links{
+   display: inline-flex;
+  }
+
+  .hello{
+    width: 90%;
+    /* padding-top: 320px; */
+  }
+  .footer-container{
+    bottom: calc(auto - 10px);
+  }
+
+  .about-container{
+    width: 90%;
+    /* padding-top: 320px; */
+  }
+
+  .contact-container{
+    padding-left: 20px;
+    width: 90%;
+    /* padding-top: 320px; */
+  }
+}
+
+.move-el{
+  
+}
