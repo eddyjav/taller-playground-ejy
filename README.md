@@ -2,16 +2,16 @@
 <img src='src/img/logoKrB.png' width='100px'>
 </p>
 
-# Playground KrugerStart
 
+<h1 style="text-align: center;">Playground KrugerStart</h1>
 - In this repository you will find the KrugerStar Playground workshop.
 
 ## 🛠 Build With 
 
-- React
-- HTML
-- CSS
-- Git
+- ⚛️ React 
+- 🧱 HTML
+- 🎨 CSS
+- 🚀 Git
 
 
 
@@ -57,6 +57,7 @@ https://taller-playground-ejy.vercel.app/
 ## 👨‍💻 Authors 
 
 -  [@eddyjav](https://github.com/eddyjav/)
+
    [![github](https://img.shields.io/badge/Github-171515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/eddyjav)
 
    [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/javier-yanez-st/)
