@@ -73,3 +73,7 @@ https://taller-playground-ejy.vercel.app/
 Contributions are always welcome!
 
 Feel free to check the [issues page.](https://github.com/eddyjav/taller-playground-ejy/issues)
+
+## 👍 Show your support
+
+If you like this project give me a ⭐.
