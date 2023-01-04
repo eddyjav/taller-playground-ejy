@@ -6,6 +6,8 @@
 
 - In this repository you will find the KrugerStar Playground workshop.
 
+<img src='src/img/Mockups_PG.png'>
+
 ## 🛠 Build With 
 
 - ⚛️ React 
