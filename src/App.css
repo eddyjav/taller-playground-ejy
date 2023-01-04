@@ -93,9 +93,9 @@ nav{
 }
 
 .imglk{
-  /* margin-top: -20px; */
-  width: 82px;
-  height: 68px;
+  margin-top: -15px;
+  width: 60px;
+  height: 59px;
 }
 
 .links .link {
@@ -457,7 +457,9 @@ textarea{
 
 
 @media screen and (max-width: 800px) {
-  
+  .imglk{
+    margin-left: 15%;
+  }
 
   hr{
     width: 90%;
@@ -486,6 +488,3 @@ textarea{
   }
 }
 
-.move-el{
-  
-}

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import  kruger  from "../img/logoKr.png";
+import  kruger  from "../img/logoKrB.png";
 
 const NavBar = () => {
 
@@ -65,8 +65,9 @@ const NavBar = () => {
            
           </ul>
           <NavLink to="/" style={{textDecoration: 'none', color: 'black'}} >
-                <div className="container-logo"><div className="imgk">                 
-                </div>      
+                <div className="container-logo">
+                  <img className="imglk" src={kruger} alt="kruger" />
+                  {/* <div className="imgk"></div>       */}
                     <h2> KrugerStar</h2>
                 </div> 
             </NavLink>
