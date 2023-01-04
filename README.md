@@ -2,8 +2,8 @@
 <img src='src/img/logoKrB.png' width='100px'>
 </p>
 
+<h1 align="center">Playground KrugerStart</h1>
 
-<h1 style="text-align: center;">Playground KrugerStart</h1>
 - In this repository you will find the KrugerStar Playground workshop.
 
 ## 🛠 Build With 
