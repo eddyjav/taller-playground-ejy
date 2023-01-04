@@ -1,5 +1,6 @@
-
-<img src='src/img/logoKrB.png' width='100px'  style="margin-left: 20px">
+<p align="center">
+<img src='src/img/logoKrB.png' width='100px'>
+</p>
 
 # Playground KrugerStart
 
